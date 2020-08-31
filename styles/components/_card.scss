@@ -1,0 +1,83 @@
+.container {
+  margin: 4rem 0 10rem 0;
+  @media screen and (min-width: $sm) {
+    margin: 6rem 6rem 12rem 6rem;
+  }
+}
+
+.card {
+  border: none;
+  box-shadow: 1px 3px 13px -2px rgba(0, 0, 0, 0.22);
+  border-radius: 20px;
+  margin: $sp3 $sp2;
+  padding: $sp3 $sp2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+
+  @media screen and (min-width: $sm) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: $sp0;
+    text-align: left;
+  }
+
+  .card__info {
+    @media screen and (min-width: $sm) {
+      padding: $sp6;
+    }
+  }
+
+  .card__title {
+    margin: $sp1 0;
+    color: $very-dark-cyan;
+    font-family: $font-header;
+  }
+
+  .card__text {
+    margin: $sp1 0;
+    font-family: $font-body;
+    color: $very-grayish-blue;
+  }
+
+  .card__img {
+    width: 70%;
+    padding: $sp2 0;
+
+    @media screen and (min-width: $sm) {
+      width: 40%;
+      padding: $sp2;
+    }
+  }
+
+  &--inverted {
+    @media screen and (min-width: $sm) {
+      flex-direction: row;
+    }
+  }
+
+  &--small {
+    margin-top: -120px;
+    background-color: white;
+    color: black;
+
+    .card__title--small {
+      margin-bottom: $sp2;
+      font-size: 1rem;
+      color: $very-dark-cyan;
+      @media screen and (min-width: $sm) {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media screen and (min-width: $sm) {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      width: 50%;
+      padding: $sp2;
+    }
+  }
+}

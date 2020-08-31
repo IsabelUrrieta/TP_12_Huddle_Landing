@@ -1,0 +1,85 @@
+.footer {
+  background-color: $very-dark-cyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  padding: $sp2 $sp1;
+
+  .logo--blanco {
+    width: 50%;
+    margin: $sp2 0;
+    @media screen and (min-width: $sm) {
+      width: 60%;
+    }
+  }
+
+  .footer--direction {
+    @media screen and (min-width: $sm) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: $sp1 $sp4;
+    }
+  }
+
+  .footer__list {
+    list-style: none;
+    margin-bottom: $sp3;
+
+    .footer__list__item {
+      padding-top: $sp0;
+      line-height: $sp2;
+      display: flex;
+      align-items: baseline;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: $sp1;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    @media screen and (min-width: $sm) {
+      width: 30%;
+    }
+  }
+  .footer__info {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: #fff;
+      line-height: $sp4;
+    }
+    @media screen and (min-width: $sm) {
+      width: 25%;
+      text-align: center;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    i {
+      margin: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media screen and (min-width: $sm) {
+      width: 20%;
+    }
+  }
+  .small {
+    text-align: center;
+    @media screen and (min-width: $sm) {
+      text-align: end;
+    }
+  }
+}
